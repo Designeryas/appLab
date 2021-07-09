@@ -1,0 +1,89 @@
+.choose {
+  .title {
+    // margin-bottom: 50px;
+    h2 {
+      color: #242f51;
+      font-weight: bold;
+      font-size: 36px;
+    }
+    p {
+      font-size: 16px;
+      color: #616368;
+      max-width: 70%;
+      display: block;
+      margin: 20px auto;
+    }
+  }
+  .icon {
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    margin: 20px auto;
+  }
+  h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  span {    
+    text-align: center;    
+  }
+  .webDesign {
+    .icon {
+      background-color: #ffecef;
+    }
+  }
+  .award {
+    .icon {
+      background-color: #eaf9ff;
+    }
+  }
+  .computer {
+    .icon {
+      background-color: #fff6d3;
+    }
+  }
+  .customization {
+    .icon {
+      background-color: #e4ffee;
+    }
+  }
+  .ui {
+    .icon {
+      background-color: #f4f4ff;
+    }
+  }
+  .support {
+    .icon {
+      background-color: #fdeee4;
+    }
+  }
+
+  .img {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .choose {
+    .box {
+      padding-top: 10px!important;
+      padding-bottom: 10px!important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+  .choose {
+    .title {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}

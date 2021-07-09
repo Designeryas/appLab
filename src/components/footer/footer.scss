@@ -1,0 +1,93 @@
+.footer {
+  background-color: #09142e;
+
+  .logo {
+    text-align: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .menu {
+    ul {
+      li {
+        padding: 5px 15px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .social {
+    ul {
+      li {
+        padding: 5px 15px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        svg {
+          width: 30px;
+          path {
+            fill: #273043;
+            transition: all .2s;
+          }
+          &:hover {
+            path {
+              fill: #fff;
+              transition: all .2s;
+            }
+          }
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .copyRight {
+    text-align: center;
+    color: #55575c;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    .menu {
+      ul {
+        li {
+          padding: 5px 10px;          
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    .menu {
+      ul {
+        li {
+          padding: 5px 5px;          
+          font-size: 12px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}
+

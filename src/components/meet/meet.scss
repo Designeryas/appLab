@@ -1,0 +1,152 @@
+.meet {
+  background-image: url('../../assets/images/people.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  background-position: left;
+
+  .text {
+    h2 {
+      color: #242f51;
+      font-weight: bold;
+      width: 100%;
+      font-size: 36px;
+    }
+
+    p.subtitle {
+      color: #616368;
+      width: 100%;
+      font-weight: 500;
+    }
+  }
+
+  .owl-theme {
+    .stars {
+      svg {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+
+        &.checked path {
+          fill: #ffc107
+        }
+
+        &.unchecked path {
+          fill: #acacac
+        }
+      }
+    }
+
+    .user {
+      display: flex;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      img {
+        width: 80px;
+        margin-right: 20px;
+      }
+
+      h5 {
+        font-size: 18px;
+        color: #242f51;
+        font-weight: bold;
+      }
+
+      span {
+        font-size: 18px;
+        color: #616368;
+      }
+    }
+
+    .owl-dots {
+      display: none;
+    }
+
+    .owl-nav {
+      position: absolute;
+      right: 0;
+
+      .owl-prev,
+      .owl-next {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #cecece;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        color: #cecece;
+        transition: all 0.2s;
+
+        &:hover {
+          background-color: #cecece;
+          color: #2500f9;
+        }
+
+        span {
+          font-size: 30px;
+          font-weight: bold;
+          line-height: 30px;
+        }
+      }
+
+      .owl-prev {
+        margin-right: 10px;
+
+        &::after {
+          height: 20px;
+          display: block;
+          width: 2px;
+          background: #bdbdbd;
+          border-right: 1px white;
+          content: '';
+          top: 15px;
+          position: absolute;
+          right: 51px;
+        }
+      }
+    }
+  }
+
+  .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .meet .text h2 {
+    width: 70%;
+  }
+
+  .meet .text p.subtitle {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .meet {
+    background:none;
+  }
+}
+
+
+
+@media screen and (max-width: 575px) {
+  .meet {
+    .text {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}

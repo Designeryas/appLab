@@ -1,0 +1,39 @@
+#menu.navbar {    
+    .nav-link {
+        color: #242f51;
+        font-weight: 500;
+        transition: all 0.3s;
+        padding: 0 10px;
+        line-height: 40px;
+        outline: none;
+        &:hover {
+            color: #2500f9;
+        }
+    }
+    .cta {
+        padding: 10px 30px!important;
+        border-radius: 22px;
+        background-color: #2500f9;
+        color: white!important;
+        margin-left: 20px;
+        line-height: 24px;
+        transition: all 0.2s;
+        
+        &:hover {
+            box-shadow: 0px 6px 10px #2500f942;
+          }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #edf3fa;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 20px;
+    }
+    #menu.navbar .cta {
+        width: 141px;
+        margin: 0;
+    }
+  }
